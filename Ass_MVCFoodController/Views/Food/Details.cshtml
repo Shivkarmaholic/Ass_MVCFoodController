@@ -1,0 +1,51 @@
+﻿
+@{
+    ViewData["Title"] = "Details";
+}
+
+
+<table class="table table-bordered table-hover">
+        <tr>
+            <td colspan="2" align="center">
+               <h1>Order Details</h1>
+            </td>
+        </tr>
+        <tr>
+            <td >
+                Name
+            </td>
+            <td>
+               @ViewBag.Name
+            </td>
+        </tr>
+        <tr>
+            <td>Mobile No</td>
+            <td>
+                @ViewBag.Mobile
+            </td>
+        </tr>
+        <tr>
+            <td>South Indian Dish: </td>
+            <td>
+                @foreach(string s in ViewBag.South)
+            {
+                <p>
+                @s
+                </p>
+            }
+            </td>
+        </tr>
+        <tr>
+            <td>North Indian Dish: </td>
+            <td>
+                @foreach(string s in ViewBag.North)
+            {
+                <p>
+                @s
+                </p>
+            }
+            </td>
+        </tr>
+                
+    </table>
+

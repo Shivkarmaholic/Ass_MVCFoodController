@@ -1,0 +1,54 @@
+﻿
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h1>Create</h1>
+
+@using(Html.BeginForm()){
+
+    <table class="table table-bordered">
+        <tr>
+            <td colspan="2" align="center">
+               <h1>Order Food</h1>
+            </td>
+        </tr>
+        <tr>
+            <td >
+                Name
+            </td>
+            <td>
+                <input type="text" name="txtname" />
+            </td>
+        </tr>
+        <tr>
+            <td>Mobile No</td>
+            <td><input type="number" name="txtmobile" /></td>
+        </tr>
+        <tr>
+            <td>Select South Indian Items:</td>
+            <td>
+                <input type="checkbox" name="chksouth" value="Dosa"> Dosa
+                <input type="checkbox" name="chksouth" value="Uttapa"> Uttapa
+                <input type="checkbox" name="chksouth" value="MeduVada"> MeduVada
+                <input type="checkbox" name="chksouth" value="Idli Sambar"> Idli Sambar
+                </td>
+        </tr>
+        <tr>
+            <td>Select North Indian Items:</td>
+            <td>
+                <input type="checkbox" name="chknorth" value="Paneer Kadai"> Paneer Kadai
+                <input type="checkbox" name="chknorth" value="Paneer Makhna"> Paneer Makhna
+                <input type="checkbox" name="chknorth" value="Shev Bhaji"> Shev Bhaji
+                <input type="checkbox" name="chknorth" value="Baingan Bharta"> Baingan Bharta
+                </td>
+        </tr>
+        <tr>
+            <td colspan="2" align="center">
+                <input class="btn" type="submit" name="btnsubmit"/>
+            </td>
+        </tr>
+        
+    </table>
+}
+
