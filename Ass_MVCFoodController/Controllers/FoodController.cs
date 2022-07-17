@@ -8,7 +8,7 @@ namespace Ass_MVCFoodController.Controllers
         {
             return View();
         }
-        [HttpPost]
+        [HttpPost] 
         public IActionResult Create(IFormCollection form,ICollection<string> chksouth, ICollection<string> chknorth)
         {
             ViewBag.Name = form["txtname"];
